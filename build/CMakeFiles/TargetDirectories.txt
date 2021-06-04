@@ -1,5 +1,0 @@
-/home/talel/gRPCexample/build/CMakeFiles/rebuild_cache.dir
-/home/talel/gRPCexample/build/CMakeFiles/edit_cache.dir
-/home/talel/gRPCexample/build/protos/CMakeFiles/rebuild_cache.dir
-/home/talel/gRPCexample/build/protos/CMakeFiles/edit_cache.dir
-/home/talel/gRPCexample/build/protos/CMakeFiles/gRPCexample_grpc.dir
