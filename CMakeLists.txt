@@ -42,5 +42,5 @@ endif()
 
 #Add sub-directories
 add_subdirectory(protos)
-#add_subdirectory(systemd)
-#add_subdirectory(services)
+add_subdirectory(systemd)
+add_subdirectory(services)
