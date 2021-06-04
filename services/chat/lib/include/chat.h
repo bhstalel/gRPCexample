@@ -5,6 +5,7 @@
 #include <iostream>
 
 #include <grpcpp/grpcpp.h>
+#include <gRPCexample.grpc.pb.h>
 
 using grpc::Server;
 using grpc::ServerBuilder;
@@ -12,14 +13,12 @@ using grpc::ServerContext;
 using grpc::Status;
 using grpc::ServerWriter;
 
+using namespace gRPCexample;
 
-class ChatServiceImpl final : public DeviceToolBox::Service {
+class ChatServiceImpl final : public gRPCexample::Chat::Service {
     public:
-        Status ToolboxCommand(ServerContext* context, const ToolboxQuery* tbReq, ServerWriter<ToolboxResult>* toolResultWriter) override;
-        ToolboxServiceImpl() {}
-    private:
-        const   std::string     lteiface = "wwan0";
-        const   std::string     ethiface = "eth0";
+        Status SaySomething(ServerContext* context, const gRPCexample::RequestMessage* request, gRPCexample::ReplyMessage* response) override;
+        ChatServiceImpl() {}
 };
 
-#endif // !_TOOLBOXSERVICEAPI_H
+#endif
