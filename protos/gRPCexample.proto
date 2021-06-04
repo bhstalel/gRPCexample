@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package gRPCexample;
+
+message RequestMessage{
+    string request = 1;
+}
+
+message ReplyMessage{
+    string reply = 1 ;
+}
+
+service Chat {
+    rpc SaySomething(RequestMessage) returns (ReplyMessage) {}
+}

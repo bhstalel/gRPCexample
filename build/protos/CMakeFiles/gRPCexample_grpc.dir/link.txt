@@ -1,0 +1,2 @@
+/usr/bin/ar qc libgRPCexample_grpc.a CMakeFiles/gRPCexample_grpc.dir/gRPCexample.pb.cc.o CMakeFiles/gRPCexample_grpc.dir/gRPCexample.grpc.pb.cc.o
+/usr/bin/ranlib libgRPCexample_grpc.a
